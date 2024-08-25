@@ -1,11 +1,12 @@
 package iuh.fit.se;
 
 /**
- * @description
+ * @description Class representing a Rectangle with methods to calculate its perimeter, area, and display its details.
  * @author: Vi, Nguyen Gia
  * @version: 1.0
- * @created: $DATE
+ * @created: 2024-08-25
  */
+
 public class Rectangle {
 
     //Attributes
@@ -15,14 +16,12 @@ public class Rectangle {
     //Methods
     public Rectangle() {
     this(5.0,0.0);
-//    length = 0.0;
-//    width = 0.0;
     }
 
     /**
-     * Contructor
-     * @param l The lenght of the rectangle
-     * @param w The width of the rectangle
+     * Constructs a Rectangle with specified length and width.
+     * @param length the length of the rectangle
+     * @param width the width of the rectangle
      */
 
     public Rectangle(double length, double width) {
@@ -64,10 +63,18 @@ public class Rectangle {
         this.width = width;
     }
 
+    /**
+     * Calculates the area of the rectangle.
+     * @return the area of the rectangle
+     */
     public double getArea() {
         return this.length * this.width;
     }
 
+    /**
+     * Calculates the perimeter of the rectangle.
+     * @return the perimeter of the rectangle
+     */
     public double getPerimeter() {
         return (this.length + this.width)*2;
     }
